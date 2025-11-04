@@ -74,5 +74,24 @@ ui <- page_fluid(
       mainPanel(
         verbatimTextOutput(outputId = "dna_transcribed")
       )
+    )),
+  layout_columns(
+    col_widths = 12,
+    card(
+      card_header("Virtual Ribosome"),
+      textInput(inputId = "rna_seq",
+                label = "Input Sequence:",
+                value = "",
+                width = "100%",
+                placeholder = "Enter sequence to be transcribed"),
+      
+    )),
+  layout_columns(
+    col_widths = 12,
+    card(
+      card_header("Virtual Ribosome output"),
+      mainPanel(
+        verbatimTextOutput(outputId = "rna_translated")
+      )
     ))
 )

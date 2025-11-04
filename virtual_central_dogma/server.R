@@ -10,4 +10,8 @@ server <- function(input, output) {
   output$dna_transcribed <- renderText({
     transcribe_dna(dna = input$dna_seq)
   })
+  
+  output$rna_translated <- renderText({
+    translate_rna(rna = input$rna_seq)
+  })
 }
