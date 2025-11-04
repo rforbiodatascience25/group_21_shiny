@@ -55,5 +55,24 @@ ui <- page_fluid(
       mainPanel(
         verbatimTextOutput(outputId = "dna")
       )
+    )),
+  layout_columns(
+    col_widths = 12,
+    card(
+      card_header("Virtual RNA Polymerase"),
+      textInput(inputId = "dna_seq",
+                  label = "Input Sequence:",
+                  value = "",
+                  width = "100%",
+                  placeholder = "Enter sequence to be transcribed"),
+
+    )),
+  layout_columns(
+    col_widths = 12,
+    card(
+      card_header("Virtual RNA Polymerase output"),
+      mainPanel(
+        verbatimTextOutput(outputId = "dna_transcribed")
+      )
     ))
 )

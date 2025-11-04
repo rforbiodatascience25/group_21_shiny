@@ -6,4 +6,8 @@ server <- function(input, output) {
                             input$prob_C,
                             input$prob_G))
   })
+  
+  output$dna_transcribed <- renderText({
+    transcribe_dna(dna = input$dna_seq)
+  })
 }
