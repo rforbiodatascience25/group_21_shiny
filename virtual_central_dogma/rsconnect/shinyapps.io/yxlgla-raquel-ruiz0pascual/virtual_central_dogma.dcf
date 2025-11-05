@@ -5,7 +5,7 @@ account: yxlgla-raquel-ruiz0pascual
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 15980652
-bundleId: 11137258
+bundleId: 11137313
 url: https://yxlgla-raquel-ruiz0pascual.shinyapps.io/virtual_central_dogma/
 version: 1
 asMultiple: FALSE

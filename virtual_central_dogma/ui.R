@@ -1,4 +1,7 @@
-ui <- fluidPage(
+library("shiny")
+library("bslib")
+
+ui <- page_fluid(
   layout_columns(
     col_widths = 12,
     card(
