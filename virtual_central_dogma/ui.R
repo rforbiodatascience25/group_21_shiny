@@ -9,7 +9,7 @@ ui <- page_fluid(
     col_widths = 12,
     card(
       titlePanel("About"),
-      helpText("Describe what your app does...")
+      helpText("This app simulates the central dogma: DNA -> RNA -> Protein")
     )),
   layout_columns(
     col_widths = 12,
@@ -92,6 +92,14 @@ ui <- page_fluid(
       card_header("Virtual Ribosome output"),
       mainPanel(
         verbatimTextOutput(outputId = "rna_translated")
+      )
+    )),
+  layout_columns(
+    col_widths = 12,
+    card(
+      card_header("DNA Base Frequencies"),
+      mainPanel(
+        tableOutput(outputId = "base_counts")
       )
     ))
 )
