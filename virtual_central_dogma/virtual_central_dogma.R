@@ -3,7 +3,7 @@ library("shiny")
 library("bslib")
 
 # Load needed functions
-source(file = "app_functions.R")
+source(file = "app_functions.R", local = TRUE)
 
 # Run the frontend user interface ui.R
 source(file = "ui.R")
