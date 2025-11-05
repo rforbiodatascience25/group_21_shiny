@@ -1,4 +1,4 @@
-ui <- page_fluid(
+ui <- fluidPage(
   layout_columns(
     col_widths = 12,
     card(
